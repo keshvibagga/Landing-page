@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f9fafc;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      width: 100%;
+      padding: 20px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: fixed;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #007bff;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #007bff;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #007bff, #00c6ff);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    .hero button {
+      padding: 12px 30px;
+      font-size: 1rem;
+      color: #007bff;
+      background-color: #fff;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #e8f0ff;
+    }
+
+    /* About Section */
+    .about {
+      padding: 80px 20px;
+      text-align: center;
+      background: #fff;
+    }
+
+    .about h2 {
+      color: #007bff;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* Features */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 60px 20px;
+      background: #f1f5ff;
+      gap: 30px;
+    }
+
+    .feature {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      max-width: 300px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 30px;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MyBrand</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Features</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Our Landing Page</h1>
+    <p>Your one-stop platform for innovation, creativity, and digital excellence. Let’s build something amazing together.</p>
+    <button>Get Started</button>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      We are passionate creators focused on delivering impactful digital experiences. Our goal is to empower users with simple, smart, and engaging solutions.
+    </p>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>🚀 Fast Performance</h3>
+      <p>Optimized for speed and reliability, ensuring smooth user experiences.</p>
+    </div>
+    <div class="feature">
+      <h3>🎨 Beautiful Design</h3>
+      <p>Crafted with a modern aesthetic and responsive layout for all devices.</p>
+    </div>
+    <div class="feature">
+      <h3>🔒 Secure Platform</h3>
+      <p>We prioritize user safety with top-notch encryption and data protection.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 MyBrand. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
